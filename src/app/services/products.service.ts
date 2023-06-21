@@ -40,7 +40,6 @@ export class ProductsService {
     .pipe(
       retry(3),
       map(products => products.map(item => {
-        console.log('params', params.keys())
         return {
           ...item,
           taxes: item.price > 0 ? .19 * item.price : 0

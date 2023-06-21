@@ -7,7 +7,7 @@ import { Calculator } from './calculator';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-testing-service';
+  title = 'angular-unit-test-forms';
 
   ngOnInit(): void {
     const calculator = new Calculator();
